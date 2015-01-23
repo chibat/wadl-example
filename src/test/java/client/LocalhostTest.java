@@ -22,12 +22,12 @@ public class LocalhostTest {
     }
 
     @Test
-    public void testJson() throws URISyntaxException {
+    public void testJson() {
         assertTrue(3 == add.json().getAsResult(1, 2).getValue());
     }
 
     @Test
-    public void testXml() throws URISyntaxException {
+    public void testXml() {
         assertTrue(5 == add.xml().getAsResult(2, 3).getValue());
     }
 }
