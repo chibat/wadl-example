@@ -40,9 +40,8 @@ public class Add {
     }
 
     public static void main(String[] args) {
-        URI uri = URI.create("http://localhost:8080/");
-        ResourceConfig config = new ResourceConfig();
-        config.packages(true, "server");
-        JdkHttpServerFactory.createHttpServer(uri, config);
+        JdkHttpServerFactory.createHttpServer(
+                URI.create("http://localhost:8080/"),
+                new ResourceConfig().packages(true, "server"));
     }
 }

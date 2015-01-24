@@ -1,5 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'server.Add'
 
 task wrapper(type: Wrapper) {
   gradleVersion = '2.2.1'
